@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sign">
+        <h1>Sign Up</h1>
+    </div>
+    <div class="suform">
+        <form  name="sign_up" onsubmit="return validateform()">
+            <div class="form_design">
+                Name:<input type="text" name="name" id="uname" required placeholder="Name"><span class="formerror" id="nameerror"></span>
+            </div>
+            <div class="form_design" >
+                Email:<input type="email" name="email"id="email" required placeholder="not more than 20 characters"><span class="formerror" id="emailerror"></span>
+            </div> 
+            <div class="form_design" >
+                Phone Number:<input type="phone"name="phone_num" id="phonenum" required><span class="formerror" id="numerror"></span>
+            </div>
+            <div class="form_design" >
+                Password:<input type="password" name="pass"id="pass" required><span class="formerror" id="passerror"></span>
+            <div class="form_design" >
+                Confirm Password:<input type="password" name="cpass" id="cpass" required><span class="formerror" id="cpasserror"></span>
+            </div>
+            
+            <input type="submit"value="Submit" class="but">
+
+        </form>
+        
+    </div>
+</body>
+<script src="form.js"></script>
+</html>
