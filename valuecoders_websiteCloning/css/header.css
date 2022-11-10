@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display:flex;
+    background-color: #1D1C39;
+    height:100px;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:10px;
+    
+}
+
+
+
+nav ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+nav ul li{
+    list-style-type: none;
+    color:white;
+    font-size: 18px;
+    font-weight:bold;
+    margin:30px;
+   
+    
+}
+nav ul li a{
+    box-sizing: border-box;
+    display:inline-block; /* as we need to sepcify the height and width of anchor tag but <a> being inline tag we cannot set width and height */
+    background: #60B741;
+    border-radius: 4px;
+    color: #1D1C39;
+    font-weight: 900;
+    text-decoration: none;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    padding-top:15px;
+   
+}
