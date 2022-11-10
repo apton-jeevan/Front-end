@@ -3,6 +3,20 @@
             margin: 0;
             padding: 0;
         }
+        body html{
+            width:100%;
+        }
+
+        nav{
+            background-color:black;
+            color:white;
+            width:100vw;
+            /* display:flex; */
+            align-items: center;
+        }
+        Nav ul{
+            display:flex;
+        }
         nav ul li{
             list-style-type: none;
             margin:0 35px;
@@ -17,16 +31,8 @@
            cursor:pointer;
 
         }
-        Nav ul{
-            display:flex;
-        }
-        nav{
-            background-color:black;
-            color:white;
-            width:100vw;
-            /* display:flex; */
-            align-items: center;
-        }
+
+
         .maincontainer{
             display: flex;
             justify-content: center;
@@ -42,21 +48,17 @@
         .box{
             border:1px solid black;
         }
-        .boxtext{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height:10vw;
-            font-size:50px
-        }
         .box:hover{
             background-color: rgb(244, 232, 244);
             cursor:pointer;
         }
-        .infocontainer .info{
-            margin:10px;
-            display:inline-block;
-            font-size:30px
+
+        .line{
+            height:0.5vw;
+            width:0vw;
+            background-color:#fdaafd;;
+            transition:width 1s linear;
+            
         }
         .br{
             border-right: 0;
@@ -73,6 +75,20 @@
         .bb{
             border-bottom: 0;
         }
+        .boxtext{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:10vw;
+            font-size:50px
+        }
+
+        .infocontainer .info{
+            margin:10px;
+            display:inline-block;
+            font-size:30px
+        }
+        
         #reset{
             font-size:15px;
 
@@ -86,17 +102,17 @@
             width:0;
             transition: width 1s linear;
         }
-        body html{
-            width:100%;
-        }
 
 @media screen and (max-width:600px){
     .maincontainer{
-        flex-direction:column-reverse;
+        flex-wrap:wrap-reverse;
         align-items:center;
     }
     nav ul li{
 font-size:15px;
+    }
+    .boxtext{
+        font-size:25px
     }
     
 
