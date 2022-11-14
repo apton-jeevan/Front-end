@@ -1,0 +1,140 @@
+.afterheader{
+    padding:0vw 6vw;
+    background-color: #1D1C39;
+
+}
+.herosection{
+    display: flex;
+    justify-content: space-between;
+    padding-top:180px;
+    padding-bottom:70px ;
+   
+
+}
+.lefthero{
+    color:white;
+}
+
+.lefthero h1{
+    font-size: 4em;
+}
+.lefthero p{
+    color: #BDB7B7;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.contact_margintop{
+    margin-top: 70px;
+}
+
+.herofooter{
+    display:flex;
+    text-align: center;
+    color: #BDB7B7;
+    opacity:0.3;
+
+}
+
+.trst_ftrn h4{
+    font-size: 14px;
+    text-align: left;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FDFDFD;
+    opacity: 0.7;
+    height:44px;
+    width:220px;
+    
+    
+
+}
+.ftrn{
+    padding-left:120px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:86px;
+    width:1400px;
+}
+
+
+.ftrn1{
+
+    display:flex;
+    background-image: url("https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg");
+    background-repeat: no-repeat;
+    
+    width:130px;
+    height:30px;
+    background-position: center;
+    background-position: 0px 0px;
+
+}
+.ftrn1:hover{
+    background-position: -162px 0px;
+
+}
+.ftrn2{
+
+    background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 60px;
+    background-position: 0px -60px;
+}
+.ftrn2:hover{
+    background-position: -162px -60px;
+}
+
+
+.ftrn3{
+
+    background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 60px;
+    background-position: 0px -146px;
+
+}
+
+.ftrn3:hover{
+    background-position: -162px -146px;
+
+}
+.ftrn4{
+
+    background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 60px;
+    background-position: 0px -208px;
+
+}
+.ftrn4:hover{
+    background-position: -162px -208px;
+}
+.ftrn5{
+
+    background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 60px;
+    background-position: 0px -264px;
+
+}
+.ftrn5:hover{
+    background-position: -162px -264px;
+}
+.ftrn6{
+
+    background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 60px;
+    background-position: 0px -331px;
+
+}
+.ftrn6:hover{
+    background-position: -162px -331px;
+}
