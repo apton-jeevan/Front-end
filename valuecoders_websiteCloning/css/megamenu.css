@@ -1,0 +1,42 @@
+/* .megamenu{
+    position:relative;
+} */
+.megacontent{
+    position:absolute;
+    left:0;
+    display:none;
+} 
+
+.megacontent a{
+    display:block;
+    color: #5D6579;
+    text-decoration:none;
+    padding:10px 0px;
+    
+}
+.megacontent a:hover{
+    color: #1D1D3A;
+    text-decoration: underline;
+}
+
+.megamenu:hover .megacontent{
+    display:block;
+    background-color: #fff;
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+}
+nav ul li span{
+    /* display:none; */
+    color:white;
+    position:absolute;
+    left:40%;
+    
+}
+
+.megamenu:hover span{
+    display:inline;
+}
+.megamenu:hover span{
+    margin-top:31px;
+} 
