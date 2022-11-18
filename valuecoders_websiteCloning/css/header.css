@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background-color: #1D1C39;
+    color: #BDB7B7;
+    font-family: 'noto_sansmedium', sans-serif;
+    font-size: 18px;
+    
+    
 }
 nav{
-    display:flex;
+    display:inline-flex;
     background-color: #1D1C39;
-    height:100px;
+    height:70px;
     justify-content:space-between;
     align-items: center;
     padding-left:10px;
@@ -24,6 +30,7 @@ nav img:hover{
 }
 
 nav ul{
+    height:70px;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
@@ -33,11 +40,10 @@ nav ul li{
     list-style-type: none;
     color:white;
     font-size: 18px;
-    font-weight:bold;
     margin-top:30px;
     margin-left:30px;
     margin-right:30px;
-    padding-bottom: 30px; 
+    padding-bottom: 20px; 
 }
 
 nav ul li:hover{
@@ -50,23 +56,37 @@ nav ul li:hover{
 
 
 /* conatct us css */
-pre a{
-    box-sizing: border-box;
-    display:inline-block; /* as we need to sepcify the height and width of anchor tag but <a> being inline tag we cannot set width and height */
+
+
+.navcontact{
+    white-space:nowrap; /*so that 'contact us comes in a single line*/
+    padding:0px;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background: #60B741;
     border-radius: 4px;
-    color: #1D1C39;
     font-size: 18px;
     font-weight:bold;
-    text-decoration: none;
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    padding-top:15px;
-    transition: background-color 0.5s 
-   
+    width: 135px;
+    height: 38px;
+    transition: background-color 0.5s ;
 }
-pre a:hover{
+.navcontact a{
+    text-decoration: none;
+    color: #1D1C39;
+}
+.navcontact i{
+    margin-left:10px;
+    color: #1D1C39;
+}
+.navcontact:hover{
    background-color: white;
    cursor: pointer;
+   transition: background-color 0.5s ;
+}
+
+.container1{
+    padding:0vw 6vw;
 }

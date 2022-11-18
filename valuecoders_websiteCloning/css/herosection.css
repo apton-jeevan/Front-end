@@ -1,13 +1,12 @@
-.afterheader{
+.container{
     padding:0vw 6vw;
-    background-color: #1D1C39;
+    min-height:calc( 100vh - 156px );
 
 }
 .herosection{
     display: flex;
     justify-content: space-between;
-    padding-top:180px;
-    padding-bottom:70px ;
+    padding-top:150px;
    
 
 }
@@ -16,33 +15,62 @@
 }
 
 .lefthero h1{
-    font-size: 4em;
+    font-size: 3em;
 }
 .lefthero p{
     color: #BDB7B7;
     line-height: 32px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.contact_margintop{
-    margin-top: 70px;
+.contact{
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #60B741;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight:bold;
+    width: 200px;
+    height: 50px;
+    transition: background-color 0.5s ;
+
+}
+.contact a{
+    text-decoration: none;
+    color: #1D1C39;
+}
+.contact i{
+    margin-left:10px;
+    color: #1D1C39;
+}
+.contact:hover{
+   background-color: white;
+   cursor: pointer;
+   transition: background-color 0.5s ;
 }
 
 .herofooter{
+    
     display:flex;
+
     text-align: center;
-    color: #BDB7B7;
-    opacity:0.3;
+    padding:0vw 6vw;
+    background: linear-gradient(180deg, rgba(34,37,64,0) -5.07%, #222540 88.91%);
 
 }
 
+
 .trst_ftrn h4{
-    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    justify-content: center;
     text-align: left;
     line-height: 22px;
     text-transform: uppercase;
     color: #FDFDFD;
-    opacity: 0.7;
+    opacity: 0.3;
     height:44px;
     width:220px;
     

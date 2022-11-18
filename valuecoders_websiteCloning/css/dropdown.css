@@ -1,10 +1,12 @@
-.dropdown{
+
+.arrowup{
     position:relative;
 
 }
 .dropdowncontent{
     position:absolute;
-    display:none;
+    visibility: hidden;
+    
 }
 .dropdowncontent a{
     display:block;/* <a> is inline so we make it block so that it is displayed vertically and not horizontally */
@@ -17,25 +19,24 @@
     color: #1D1D3A;
     text-decoration: underline;
 }
-nav ul li span{
-    display:none;
+.arrowup span{
+    visibility: hidden;
     color:white;
     position:absolute;
     left:40%;
-    display:none;
+   
 }
 
 .dropdown:hover .dropdowncontent{
-    display:block;/*as display was made none when not hovered*/
+    visibility:visible;/*as visibility was made hidden*/
     background-color: #fff;
     width:max-content;
     border-radius:10px;
-    margin-top:20px;
 }
 
-.dropdown:hover span{
-    display:inline;
+.dropdown:hover .arrowup span{
+    visibility: visible;
 }
-.dropdown:hover span{
-    margin-top:31px;
+.dropdown:hover .arrowup span{
+    margin-top:30px;
 }
