@@ -19,11 +19,11 @@ nav{
     color:gold;
 }
 .logo a{
-    display:block;
+    /* display:block; */
     padding:0 20px;
     text-decoration: none;
     color:red;
-    font-size: 30px;
+    font-size: 25px;
 }
 .navlinks  {
     display:flex;
@@ -41,6 +41,10 @@ nav{
     list-style: none;
     border-radius: 4px;
 }
+/* note: here <a> is made flex so that we can align 
+navlinks(<ul>) to the center of navbar. This is the
+reason we made height of parents of <a> to 
+100%[li,navlinks] */
 .navlinks li a{
     height:100%;
     display:flex;
@@ -60,6 +64,9 @@ nav{
     visibility: hidden;
     z-index:1;
 }
+.dropdown li a{
+    color:white;
+}
 .dropdown li{
     margin:20px 0px;
 }
@@ -68,4 +75,55 @@ nav{
 
 .navlinks li:hover .dropdown{ /* used the concept of descendant selector in combinators */
     visibility: visible;
+}
+.navlinks li:hover .megamenu{
+    visibility: visible;
+}
+
+.megamenu{
+    position: absolute;
+    left:0;
+    background-color: black;
+    width:100%;
+    height:320px;
+    visibility: hidden;
+}
+
+.megamenu .megacontent{
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding:0 20px;
+height:100%;
+border-top:1px solid white;
+
+}
+.megacontent .col {
+height:100%;
+display:flex;
+justify-content: center;
+align-items: center;
+line-height: 50px;
+}
+.megacontent .col img{
+    height: 90%;
+    object-fit: cover;
+}
+
+.megacontent .col header a{
+    color:gold;
+    font-size: 30px;
+    font-weight: 500;
+  }
+.megacontent .col li a{
+    color: #f2f2f2;
+    font-size: 20px;
+    
+}
+.megalinks{
+    border-left:1px solid rgba(255, 255, 255, 0.575);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
