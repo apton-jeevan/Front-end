@@ -1,57 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+html{
+    width: 100%;
+}
 
-body{
+body {
+    box-sizing: border-box;
+    width:100%;
     background-color: #1D1C39;
     color: #BDB7B7;
     font-family: 'noto_sansmedium', sans-serif;
     font-size: 18px;
-    
-    
-}
-nav{
-    width:100%;
-    display:inline-flex;
-    background-color: #1D1C39;
-    height:70px;
-    justify-content:space-between;
-    align-items: center;
-    padding-left:10px;
-    
+
 }
 
-nav:hover{
+nav {
+   box-sizing: border-box;
+    width: 100%;
+    display: inline-flex;
+    background-color: #1D1C39;
+    height: 95px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+nav:hover {
     background: #181732
 }
 
-nav img:hover{
+nav img:hover {
     cursor: pointer;
 }
 
-nav ul{
-    height:70px;
-    display:flex;
+nav ul {
+    height: 70px;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
-}
-nav ul li{
-    list-style-type: none;
-    color:white;
-    font-size: 18px;
-    margin-top:30px;
-    margin-left:30px;
-    margin-right:30px;
-    padding-bottom: 20px; 
+
 }
 
-nav ul li:hover{
+nav ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 20px;
+}
+
+nav ul li:hover {
     cursor: pointer;
-    color:green;
+    color: green;
     transition: color 0.3s;
-   
+
 }
 
 
@@ -59,220 +66,340 @@ nav ul li:hover{
 /* conatct us css */
 
 
-.navcontact{
-    white-space:nowrap; /*so that 'contact us comes in a single line*/
-    padding:0px;
+.navcontact {
+    white-space: nowrap;
+    /*so that 'contact us comes in a single line*/
+    padding: 0px;
     margin-bottom: 30px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: #60B741;
     border-radius: 4px;
     font-size: 18px;
-    font-weight:bold;
+    font-weight: bold;
     width: 135px;
     height: 38px;
-    transition: background-color 0.3s ;
+    transition: background-color 0.3s;
 }
-.navcontact a{
+
+.navcontact a {
     text-decoration: none;
     color: #1D1C39;
 }
-.navcontact i{
-    margin-left:10px;
+
+.navcontact i {
+    margin-left: 10px;
     color: #1D1C39;
 }
-.navcontact:hover{
-   background-color: white;
-   cursor: pointer;
-   transition: background-color 0.3s ;
+
+.navcontact:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
- .megacontent{
-    position:absolute;
-    left:0; 
+
+.megacontent {
+    position: absolute;
+    left: 0;
     visibility: hidden;
     background-color: #fff;
-    width:100%;
-    height:450px;
-    display:flex;
-    
-} 
-.leftmega{
-    width:25%;
-    padding:30px;
-    border-right:1px solid rgba(101, 101, 101, 0.1);
+    width: 100%;
+    height: 450px;
+    display: flex;
 
 }
-.leftmega header{
-position: relative;
-    padding:10px 0px;
-    color:black;
+
+.leftmega {
+    width: 25%;
+    padding: 30px;
+    border-right: 1px solid rgba(101, 101, 101, 0.1);
+
+}
+
+.leftmega header {
+    position: relative;
+    padding: 10px 0px;
+    color: black;
     font-weight: 600;
-    border-bottom:1px solid rgba(40, 39, 39, 0.1);
-    
+    border-bottom: 1px solid rgba(40, 39, 39, 0.1);
+
 }
-.leftmega header i{
+
+.leftmega header i {
     visibility: hidden;
-    position:absolute;
-    right:0;
-    color:rgba(40, 39, 39, 0.1);
+    position: absolute;
+    right: 0;
+    color: rgba(40, 39, 39, 0.1);
 }
+
 .leftmega header:hover {
     visibility: visible;
     background-color: rgb(242, 242, 242);
 }
 
-.leftmega header:hover i{
+.leftmega header:hover i {
     visibility: visible;
 }
-.megamenu:hover .megacontent{
-    visibility: visible;
-    background-color: #fff;
-    width:100%;
-}
-.megamenu:hover .arrowup span{
+
+.megamenu:hover .megacontent, .mm:hover .mmcontent,.halfmenu:hover .hmcontent  {
     visibility: visible;
 }
-.megamenu:hover .arrowup span{
-    margin-top:30px;
-}
-.rightmega{
-    width:75%;
-    padding:30px;
-}
-.rightmega{
-    display:flex;
+
+
+.rightmega {
+    width: 75%;
+    padding: 30px;
+    display: flex;
     justify-content: space-evenly;
 }
-.rightmega .col{
+
+.rightmega .col {
     font-size: 13px;
 }
-.rightmega .col .sub{
-    padding:10px 0px;
+
+.rightmega .col .sub {
+    padding: 10px 0px;
 }
- .rightmega .col .sub a{
-    display:list-item;
-    padding:10px;
+
+.rightmega .col .sub a {
+    display: list-item;
+    padding: 10px;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     color: #5d6579;
+    text-decoration: none;
 }
-.rightmega .col header a{
-    font-size: 14px;
-    color:rgb(19,19,38);
-    font-weight: 600;
-}
-.arrowup{
-    position:relative;
 
+.rightmega .col header a {
+    font-size: 14px;
+    color: rgb(19, 19, 38);
+    font-weight: 600;
+    text-decoration: none;
 }
-.dropdowncontent{
-    display:flex;
-    flex-direction:column;
-    position:absolute;
+
+.rightmega .col .sub a:hover {
+    text-decoration: underline;
+    color: rgb(19, 19, 38);
+}
+.rightmega .col header a:hover {
+    text-decoration: underline;
+}
+
+.mmcontent{
+    position: absolute;
+    left: 0;
     visibility: hidden;
-    padding:0 30px;
+    background-color: #fff;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.mmcontent .col {
     font-size: 13px;
 }
-.dropdowncontent a{
+
+.mmcontent .col .sub {
+    padding: 10px 0px;
+}
+
+.mmcontent .col .sub a {
+    display: list-item;
+    padding: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #5d6579;
+    text-decoration: none;
+}
+
+.mmcontent .col header a {
+    font-size: 14px;
+    color: rgb(19, 19, 38);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mmcontent .col .sub a:hover {
+    text-decoration: underline;
+    color: rgb(19, 19, 38);
+}
+.mmcontent .col header a:hover {
+    text-decoration: underline;
+}
+
+.hmcontent{
+    position: absolute;
+    left: 430px;
+    visibility: hidden;
+    background-color: #fff;
+    width: 60%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.hmcontent .col {
+    font-size: 13px;
+}
+
+.hmcontent .col .sub {
+    padding: 10px 0px;
+}
+
+.hmcontent .col .sub a {
+    display: list-item;
+    padding: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #5d6579;
+    text-decoration: none;
+}
+
+.hmcontent .col header a {
+    font-size: 14px;
+    color: rgb(19, 19, 38);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hmcontent .col .sub a:hover {
+    text-decoration: underline;
+    color: rgb(19, 19, 38);
+}
+.hmcontent .col header a:hover {
+    text-decoration: underline;
+}
+.dropdowncontent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+    padding: 0 30px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+
+
+.dropdowncontent a {
     /* display:block; */
     /* <a> is inline so we make it block so that it is displayed vertically and not horizontally */
     color: #5D6579;
-    text-decoration:none;
-    padding:10px 0px;
-    
+    text-decoration: none;
+    padding: 10px 0px;
+
 }
-.dropdowncontent a:hover{
+
+.dropdowncontent a:hover {
     color: #1D1D3A;
     text-decoration: underline;
 }
-.arrowup span{
-    position:absolute;
-    visibility: hidden;
-    color:white;
-    left:40%;
-   
-}
+.arrowup {
+    position: relative;
 
-.dropdown:hover .dropdowncontent{
-    visibility:visible;/*as visibility was made hidden*/
-    background-color: #fff;
-    width:max-content;
-    border-radius:10px;
 }
-
-.dropdown:hover .arrowup span{
+.dropdown:hover .dropdowncontent {
     visibility: visible;
+    /*as visibility was made hidden*/
+    background-color: #fff;
+    width: max-content;
+    
 }
-.dropdown:hover .arrowup span{
-    margin-top:30px;
-}
-.container{
-    padding:0vw 6vw;
-    min-height:calc( 100vh - 156px );
+/* code for arrow pointer*/
+.arrowup span {
+    position: absolute;
+    visibility: hidden;
+    color: white;
+    left: 40%;
 
 }
-.herosection{
+
+.dropdown:hover .arrowup span,.megamenu:hover .arrowup span,.mm:hover .arrowup span,.halfmenu:hover .arrowup span  {
+    visibility: visible;
+    margin-top: 30px;
+}
+/* code for arrow pointer ends*/
+
+
+.container {
+    padding: 0vw 3vw;
+    min-height: calc(100vh - 156px);
+
+}
+
+.herosection {
     display: flex;
     justify-content: space-between;
-    padding-top:150px;
-   
+    padding-top: 150px;
+
 
 }
-.lefthero{
-    color:white;
+
+.lefthero {
+    color: white;
 }
 
-.lefthero h1{
-    font-size: 3em;
+.lefthero h1 {
+    font-size: 2em;
 }
-.lefthero p{
+
+.lefthero p {
     color: #BDB7B7;
-    line-height: 32px;
-    font-size: 18px;
+    line-height: 30px;
+    font-size: 16px;
 }
 
-.contact{
-    margin-top:50px;
-    display:flex;
+.contact {
+    margin-top: 50px;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: #60B741;
     border-radius: 4px;
     font-size: 18px;
-    font-weight:bold;
+    font-weight: bold;
     width: 200px;
     height: 50px;
-    transition: background-color 0.5s ;
+    transition: background-color 0.5s;
 
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
     color: #1D1C39;
 }
-.contact i{
-    margin-left:10px;
+
+.contact i {
+    margin-left: 10px;
     color: #1D1C39;
 }
-.contact:hover{
-   background-color:#ffb81d;
-   cursor: pointer;
-   transition: background-color 0.5s ;
+
+.contact:hover {
+    background-color: #ffb81d;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 
-.herofooter{
-    
-    display:flex;
+.herofooter {
+
+    display: flex;
 
     text-align: center;
-    padding:0vw 6vw;
-    background: linear-gradient(180deg, rgba(34,37,64,0) -5.07%, #222540 88.91%);
+    padding: 0vw 6vw;
+    background: linear-gradient(180deg, rgba(34, 37, 64, 0) -5.07%, #222540 88.91%);
 
 }
 
 
-.trst_ftrn h4{
+.trst_ftrn h4 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 12px;
     justify-content: center;
@@ -281,39 +408,42 @@ position: relative;
     text-transform: uppercase;
     color: #FDFDFD;
     opacity: 0.3;
-    height:44px;
-    width:220px;
-    
-    
+    height: 44px;
+    width: 220px;
+
+
 
 }
-.ftrn{
-    padding-left:120px ;
+
+.ftrn {
+    padding-left: 120px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height:86px;
-    width:1400px;
+    height: 86px;
+    width: 1400px;
 }
 
 
-.ftrn1{
+.ftrn1 {
 
-    display:flex;
+    display: flex;
     background-image: url("https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg");
     background-repeat: no-repeat;
-    
-    width:130px;
-    height:30px;
+
+    width: 130px;
+    height: 30px;
     background-position: center;
     background-position: 0px 0px;
 
 }
-.ftrn1:hover{
+
+.ftrn1:hover {
     background-position: -162px 0px;
 
 }
-.ftrn2{
+
+.ftrn2 {
 
     background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
     background-repeat: no-repeat;
@@ -321,12 +451,13 @@ position: relative;
     height: 60px;
     background-position: 0px -60px;
 }
-.ftrn2:hover{
+
+.ftrn2:hover {
     background-position: -162px -60px;
 }
 
 
-.ftrn3{
+.ftrn3 {
 
     background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
     background-repeat: no-repeat;
@@ -336,11 +467,12 @@ position: relative;
 
 }
 
-.ftrn3:hover{
+.ftrn3:hover {
     background-position: -162px -146px;
 
 }
-.ftrn4{
+
+.ftrn4 {
 
     background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
     background-repeat: no-repeat;
@@ -349,10 +481,12 @@ position: relative;
     background-position: 0px -208px;
 
 }
-.ftrn4:hover{
+
+.ftrn4:hover {
     background-position: -162px -208px;
 }
-.ftrn5{
+
+.ftrn5 {
 
     background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
     background-repeat: no-repeat;
@@ -361,10 +495,12 @@ position: relative;
     background-position: 0px -264px;
 
 }
-.ftrn5:hover{
+
+.ftrn5:hover {
     background-position: -162px -264px;
 }
-.ftrn6{
+
+.ftrn6 {
 
     background-image: url(https://www.valuecoders.com/wp-content/themes/valuecoders/images/header-client-logo-sprite-for-dark-md.svg);
     background-repeat: no-repeat;
@@ -373,6 +509,7 @@ position: relative;
     background-position: 0px -331px;
 
 }
-.ftrn6:hover{
+
+.ftrn6:hover {
     background-position: -162px -331px;
 }
