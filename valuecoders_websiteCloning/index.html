@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/herosection.css">
-    <link rel="stylesheet" href="css/dropdown.css">
-    <link rel="stylesheet" href="css/megamenu.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
@@ -18,7 +15,7 @@
 
 <body>
 
-    <!-- code for navbar starts -->
+    <!--code for navbar starts-->
 
     <nav>
         <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/images/logo.svg" alt="Valuecoders"
@@ -31,31 +28,58 @@
                 </li>
                 <div class="megacontent">
                     <div class="leftmega">
-                        <a href="#">Software Development</a>
-                        <a href="#">Application Development</a>
-                        <a href="#">QA & Testing</a>
-                        <a href="#">eCommerce</a>
-                        <a href="#">Analytics & DevOps</a>
+                        <header class="changemega">Software Development <i class="fa-solid fa-greater-than"></i></header>
+                        <header class="changemega">Application Development <i class="fa-solid fa-greater-than"></i></header>
+                        <header class="changemega">QA & Testing <i class="fa-solid fa-greater-than"></i></header>
+                        <header class="changemega">eCommerce <i class="fa-solid fa-greater-than"></i></header>
+                        <header class="changemega">Analytics & DevOps <i class="fa-solid fa-greater-than"></i></header>
                     </div>
 
                     <div class="rightmega">
-                        <ul>
-                            <h6><a>Software Product Development</a></h6>
-                            <li><a>MVP Development & Consulting</a></li>
-                            <li><a>SaaS Consulting & Development</a></li>
-                            <li><a>Startup Consulting</a></li>
-                            <li><a>Product Development for Startups</a></li>
-                            <li><a>Product UI/UX Design</a></li>
-                            <h6><a>Custom Software Development</a></h6>
-                            <li><a>Enterprise Software Development</a></li>
-                            <li><a>NearShore Software Development</a></li>
-                        </ul>
+                        <div class="col">
+                            <header><a href="#">Software Product Development</a></header>
+                            <div class="sub">
+                                <a href="#">MVP Development & Consulting</a>
+                                <a href="#">SaaS Consulting & Development</a>
+                                <a href="#">Startup Consulting</a>
+                                <a href="#">Product Development for Startups</a>
+                                <a href="#">Product UI/UX Design</a>
+                            </div>
+                                <header><a href="#">Custom Software Development</a></header>
+                                <div class="sub">
+                                <a href="#">Enterprise Software Development</a>
+                                <a href="#">NearShore Software Development</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <header><a href="#">Software Outsourcing services</a></header>
+                            <div class="sub">
+                                <a href="#">Dedicated Development Teams</a>
+                                <a href="#">CTO as a service</a>
+                                <a href="#">Staff Augmentation Services</a>
+                                <a href="#">Offshore Software Development</a>
+                                <a href="#">Offshore Development Center (ODC)</a>
+                                <a href="#">White-Label Development Services</a>
+                                <a href="#">How It Works</a>
+                                <a href="#">Shadow Engineers</a>
+                                <a href="#">Rate Card</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <header><a href="#">IT Consulting</a></header>
+                        <div class="sub">
+                            <a href="#">Software Consulting</a>
+                            <a href="#">Agile Consulting</a>
+                            <a href="#">CRM Consulting</a>
+                            <a href="#">Data Analytics Consulting</a>
+                        </div>
+                            <header><a href="#">Digital Transformation</a></header>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
-
 
             </div>
 
@@ -73,7 +97,7 @@
                     <a href="#">Case Studies</a>
                     <a href="#">In Media</a>
                     <a href="#">Clients & Testimonials</a>
-                    <a href="#">Why Agencies Chosse Us</a>
+                    <a href="#">Why Agencies Choose Us</a>
                     <a href="#">Careers</a>
                     <a href="#">Blogs</a>
                 </div>
@@ -89,7 +113,6 @@
 
     <!-- code for container starts -->
     <div class="container">
-
         <!--code for here section starts-->
         <div class="herosection">
             <div class="lefthero">
@@ -137,6 +160,7 @@
     </div>
     <!--hero footer ends-->
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
