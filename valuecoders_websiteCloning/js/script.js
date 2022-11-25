@@ -26,3 +26,21 @@ arrleft.forEach((element,index)=>{
    
 })
 
+//for opening and closing mobile nav and toggling hamburger menu with cross button
+
+hamicon=document.getElementById("hamburgericon")
+hamicon.addEventListener("click",()=>{
+   document.getElementById("hamburgericon").style="display:none";//removing hamburger icon
+   document.getElementById("cross").style="display:block";//adding cross icon
+   document.getElementById("mobile").style="display:block"; //adding mobile menu
+
+})
+
+crossicon=document.getElementById("cross")
+crossicon.addEventListener("click",()=>{
+   document.getElementById("hamburgericon").style="display:block"; //adding hamburger icon
+   document.getElementById("cross").style="display:none";//removing cross icon
+   document.getElementById("mobile").style="display:none";//removing mobile menu
+
+})
+

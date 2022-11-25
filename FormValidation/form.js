@@ -10,7 +10,7 @@ function validateform()
         returnval=false;
     }
     else{
-        err=document.getElementById("nameerror")
+        err=document.getElementById("nameerror") //if we do not give else conditons then error once displayed will stay there even if required condtions for that particular input is met
         err.innerHTML=""
 
     }

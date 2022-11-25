@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top:80px;
+    box-sizing: border-box;
+    background-color: #282747
+}
+.maincontainercontact{
+    display: flex;
+    box-sizing: border-box;
+    width:100vw;
+    padding-left:7vw;
+    height: 100vh;;
+    
+}
+.leftcontact{
+    width:70%;
+    box-sizing: border-box;
+}
+.head{
+display:flex;      
+}
+.logobox{
+    background: #fff url("https://www.valuecoders.com/wp-content/themes/valuecoders/images/vc-logo-dark-contact.png") center center no-repeat;
+    height: 66px;
+    width: 70px;
+    border-radius: 50px;
+}
+.headbox{
+    padding:0 20px;  
+}
+
+.headbox h1{
+    color:white;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.headbox p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 0;
+    color: #f7f7f9;
+}
+.form{
+    padding-top: 70px;
+    padding-right:150px;
+}
+.formhead{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom:1px solid rgba(144, 142, 142, 0.5);
+
+}
+.formhead h2{
+    color: #fff;
+    opacity: 1;
+}
+
+.formhead span{
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.8;
+}
+form input{
+    display: block;
+}
+.rightcontact{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(34, 37, 64, 0) -5.07%, #222540 88.91%);
+}
+
+.rightcontact h4{
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #767c8a;
+    padding-bottom: 15px;
+
+
+}
