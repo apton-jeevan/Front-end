@@ -76,11 +76,17 @@ function validateform()
         err.innerHTML=""
 
     }
+    
+    if(returnval)
+    {
+     alert("Form has been submitted sucessfully");
+    }
+
 
      return returnval
 
     
 
-
+    
 
 }

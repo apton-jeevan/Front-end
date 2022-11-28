@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Software Solutions Firm @ValueCoders - ValueCoders™</title>
     <link rel="stylesheet" href="css/contact.css">
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("bCYEIKkAyv8qhZqSi");
+   })();
+</script>
 </head>
 
 <body>
@@ -30,27 +39,28 @@
                     </div>
                     <span class="reqblock">Required Fields*</span>
                 </div>
-                <form>
+
+                <form onsubmit="return validateform()" id="myform">
                     <div class="formrow">
                         <div class="formrowcontent">
                             <div class="formdesign">
                                 Name*<input type="text" name="name" id="uname" required>
                                 <div class="formerror" id="nameerror">
                                 </div>
-                                <div class="formdesign">
-                                    Email*<input type="email" name="email" id="email" required>
-                                    <div class="formerror" id="emailerror">
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="formdesign">
+                                Email*<input type="email" name="email" id="email" required>
+
+
                             </div>
                         </div>
 
                         <div class="formrowcontent">
                             <div class="formdesign">
-                                Country*<input type="text" name="country" id="country">
+                                Country*<input type="text" name="country" id="country" required>
 
                             </div>
-                            <div class="form_design">
+                            <div class="formdesign">
                                 Phone Number:<input type="phone" name="phone_num" id="phonenum" required>
                                 <div class="formerror" id="numerror">
                                 </div>
@@ -64,18 +74,22 @@
                             <option value="parrot">Other Technology Needs</option>
                             <option value="spider">None of The Above</option>
 
-                        </select>   
+                        </select>
                     </div>
+
+                    <input type="submit" value="Submit" class="submitbutton">
                 </form>
             </div>
-            <div class="rightcontact">
-                <h4>TRUSTED BY STARTUPS<br> AND FORTUNE 500 COMPANIES</h4>
-                <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/images/contact-client-logo.png"
-                    alt="Valuecoders" width="316px" height="164px">
-            </div>
-
         </div>
+        <div class="rightcontact">
+            <h4>TRUSTED BY STARTUPS<br> AND FORTUNE 500 COMPANIES</h4>
+            <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/images/contact-client-logo.png"
+                alt="Valuecoders" width="316px" height="164px">
+        </div>
+    </div>
 
 </body>
+
+<script src="js/script.js"></script>
 
 </html>
