@@ -4,24 +4,26 @@
 }
 
 body {
-    padding-top: 80px;
+    
     box-sizing: border-box;
-    background-color: #282747
+    background-color: #242342;
+    font-family: "noto_sansmedium", sans-serif;
 }
 
 .maincontainercontact {
+    
     display: flex;
     box-sizing: border-box;
     width: 100vw;
     padding-left: 7vw;
-    height: 100vh;
-    ;
 
 }
 
 .leftcontact {
     width: 70%;
     box-sizing: border-box;
+    height: 100%;
+    padding-top: 80px;
 }
 
 .head {
@@ -56,7 +58,7 @@ body {
 
 .form {
     padding-top: 70px;
-    padding-right: 150px;
+    padding-right: 130px;
 }
 
 .formhead {
@@ -77,49 +79,55 @@ body {
     color: #fff;
     opacity: 0.8;
 }
-form{
-    color:white;
+
+form {
+    color: white;
 }
-.formdesign{
-    width:100%;
+
+.formdesign {
+    width: 100%;
 }
+
 .formdesign input {
-    margin-top:10px;
+    margin-top: 10px;
     background-color: #282747;
-    width:90%;
-    height: 60px;
-    border:1px solid white;
+    width: 90%;
+    height: 44px;
+    border: 1px solid white;
     border-radius: 10px;
 }
-.formrowcontent{
+
+.formrowcontent {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-   
+
 }
 
 
 .formrow select {
-    color:white;
+    color: white;
     background-color: #282747;
     width: 80%;
-    height: 60px;
-    border:1px solid white;
+    height: 44px;
+    border: 1px solid white;
     border-radius: 10px;
-    display:block;
+    display: block;
     margin-top: 10px;
     font-size: 16px;
 }
 
 form input {
     display: block;
-    color:white;
-    font-size:16px;
+    color: white;
+    font-size: 16px;
 }
-.formerror{
-    color:red;
+
+.formerror {
+    color: red;
 }
-.submitbutton{
+
+.submitbutton {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -132,10 +140,12 @@ form input {
     height: 70px;
     transition: background-color 0.5s;
     cursor: pointer;
-    color:#1d1d1d;
+    color: #1d1d1d;
+    z-index:2;
 }
-.submitbutton:hover{
-    background-color:white;
+
+.submitbutton:hover {
+    background-color: white;
 }
 
 .rightcontact {
@@ -144,8 +154,7 @@ form input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(34, 37, 64, 0) -5.07%, #222540 88.91%);
+    background-color: #282747;
 }
 
 .rightcontact h4 {
@@ -153,30 +162,164 @@ form input {
     text-transform: uppercase;
     color: #767c8a;
     padding-bottom: 15px;
+    padding-top: 80px;
 
 
 }
 
-@media screen and (max-width:1200px){
-    .maincontainercontact{
+/* css for footer starts */
+
+.footer {
+    box-sizing: border-box;
+    padding: 0 7vw;
+    background-color: #282747;
+    bottom: 0;
+    width:100%;
+ 
+
+}
+
+.footerflex {
+    display: flex;
+    height: 182px;
+    padding: 20px 0;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.footerleft,
+.footerleft a {
+    color: #8e8c8c;
+    font-size: 14px;
+    text-decoration: none;
+}
+.copy{
+    padding-bottom:10px
+}
+.footerleft a{
+    padding-right:10px;
+    transition: all 0.3s ease-in-out;
+}
+.footerleft a:hover{
+    color:white;
+}
+.ratingstars i{
+    color:gold;
+}
+.rateusbox{
+    border:1px solid gold;
+    border-radius: 6px;
+    padding: 6px 26px;
+    display: inline-block;
+    color: #ffb81d;
+    margin-right: 10px;
+    margin-top:15px;
+    transition: all 0.3s ease-in-out;
+}
+.rateusbox:hover{
+    color:green;
+    border:1px solid green;
+}
+
+.footerright{
+    display:flex;
+    flex-direction: column;
+}
+.footerlogo{
+    display:flex;
+    justify-content: center;
+}
+.footerright img{
+    display:block;
+}
+
+.footerright i{
+    font-size: 30px;
+    color:white;
+    padding:20px;
+}
+.footerright i:hover{
+    opacity:0.25;
+}
+@media screen and (max-width:1400px) {
+    .footerleft,.footerleft a {
+        font-size: 12px;
+    }
+    .footerright i{
+        padding:10px;
+    }
+    .footerleft a{
+        padding-right:0px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .maincontainercontact {
         flex-direction: column;
+        background-color: #282747;
+        padding-left: 0;
     }
-    .leftcontact,.rightcontact{
-        width:100%;
+
+    .leftcontact,
+    .rightcontact {
+        width: 100%;
+        padding-left:7vw;
+        box-sizing:border-box;
     }
+    
+
+    .rightcontact {
+        background-color: #242342;
+        height:270px;
+        
+    }
+    .rightcontact h4{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+   .footerflex{
+    flex-direction:column;
+    height: 290px;
+    justify-content: space-between;
+   }
 }
 
-@media screen and (max-width:768px){
-    .formrowcontent{
+@media screen and (max-width:768px) {
+    .formrowcontent {
         flex-direction: column;
         width: 100%;
+    }
+
+    .form {
+        padding-top: 30px;
+        padding-right: 0px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .formdesign {
+        padding-top: 20px;
+    }
+
+    .formhead h2 {
+        font-size: 16px;
+    }
+
+    .formrowcontent {
+        padding: 0px;
+    }
+
+    .selectelement {
+        padding-top: 20px;
+    }
 }
-.form{
-    padding: 0;
-}
-form{
-    width: 100% ;
-    
-    
-}
+
+@media screen and (max-width:600px) {
+
+    .logobox {
+        height: 51px;
+        width: 90px;
+        border-radius: 50px;
+    }
 }
